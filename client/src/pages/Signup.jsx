@@ -2,6 +2,7 @@ import React from "react";
 import { Label, TextInput, Button, Alert } from "flowbite-react";
 import { Link, useNavigate } from "react-router-dom";
 import { useState } from "react";
+import Oath from "../components/Oath";
 
 export default function Signup() {
   const [formData, setFormData] = useState({});
@@ -78,6 +79,7 @@ export default function Signup() {
               Sign Up
             </Button>
           </div>
+          <Oath />
         </form>
         <div className="flex gap-2">
           <span>Have an account?</span>
